@@ -7,3 +7,20 @@ import '../scss/main.scss';
 /* place your code below */
 
 console.log('HELLO 🚀')
+
+const toggl = function() {
+    const navbar = document.querySelector('.navigation__toggl--js');
+    navbar.classList.toggle('hide');
+    const topmargin = document.querySelector('.body').classList.toggle('topmargin')
+}
+const button = document.querySelector('.navigation__button--js');
+button.addEventListener("click", toggl);
+
+import moment from 'moment';
+console.log(moment().startOf('day').fromNow());
+
+
+    
+    /*addEventListener('click', console.log('click'));
+
+console.log(button)*/

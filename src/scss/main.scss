@@ -11,3 +11,80 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.navigation {
+  grid-column: 1/6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: black;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  &__button {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 50px;
+  }
+  &__link {
+      margin-bottom: 10px;
+      text-decoration: none;
+  
+}
+
+
+.aboutme {
+  grid-column:1/4;
+}
+.mypicture {
+  object-fit: cover;
+  width: 100%;
+  grid-column: 4/6;
+  
+}
+
+.job-experience {
+  grid-column: 2/5;
+}
+
+.footer {
+  grid-column: 1/6;
+  display: flex;
+  justify-content: center;
+}
+.hide {
+  display: none;
+}
+
+.topmargin {
+  margin-top: 50px;
+}
+@media (max-width: 425px) {
+  body {
+      background-color: indianred;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+}
+.aboutme {
+  grid-column:1/3;
+}
+.mypicture {
+  object-fit: cover;
+  width: 100%;
+  grid-column: 1/3;
+  
+}
+
+.job-experience {
+  grid-column: 1/3;
+}
+
+.footer {
+  grid-column: 1/3;
+}}}

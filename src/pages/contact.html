@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <nav class="navigation navigation__toggl--js">
+      <a href="index.html" alt="Homepage" class="navigation__link">Homepage</a>
+      <a href="portfolio.html" alt="Homepage" class="navigation__link"
+        >My portfolio</a
+      >
+      <a href="contact.html" alt="Homepage" class="navigation__link">Contact</a>
+      <a href="form.html" alt="Form for copying" class="navigation__link"
+        >Copy form</a
+      >
+    </nav>
+    <button class="navigation__button navigation__button--js">Open</button>
+
+    <article>
+      <h1 class="contact__header">Welcome to the contact subpage</h1>
+      <form method="POST" action="https://dev.cotenfrontend.pl/" class="form">
+        
+        <fieldset>
+          <legend>Bonus</legend>
+          <p>
+            <label for="name">Name</label>
+            <input
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
+          </p>
+          <p>
+            <label>Riddle
+              <input
+                name="riddles"
+                id="riddles"
+                placeholder="riddles"
+              />
+            </label>
+          </p>
+        </fieldset> 
+
+        <fieldset>
+          <legend>Your contact info</legend>
+          <p>
+            <label for="firstname">Your name</label>
+            <input
+              name="firstname"
+              id="firstname"
+              placeholder="Your first name"
+            />
+          </p>
+          <p>
+            <label
+              >Your last name
+              <input
+                name="lastname"
+                id="lastname"
+                placeholder="Your last name"
+              />
+            </label>
+          </p>
+          <p>
+            <label
+              >Your e-mail address:
+              <input
+                type="email"
+                name="your email address"
+                placeholder="e-mail"
+              />
+            </label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Do you want to subscribe for newsletter?</legend>
+          <p>
+            <label
+              ><input type="radio" name="newsletter" value="Yes" />Yes</label
+            >
+          </p>
+          <p>
+            <label><input type="radio" name="newsletter" value="No" />No</label>
+          </p>
+          <p>
+            <label
+              ><input type="checkbox" name="agree" value="yep" checked />I
+              agree</label
+            >
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Number, range, password, etc.</legend>
+          <label
+            >First field<input type="number" name="number" value="5"
+          /></label>
+          <label>Tel:<input type="tel" name="phone" /></label>
+          <label
+            >Password<input
+              type="password"
+              name="pass"
+              placeholder="your password"
+          /></label>
+          <label
+            >Range<input type="range" name="range" min="0" max="100" step="5"
+          /></label>
+        </fieldset>
+        <input type="submit" value="Submit"/>
+      </form>
+    </article>
+  </body>
+</html>
