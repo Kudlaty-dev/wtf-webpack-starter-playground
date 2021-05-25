@@ -17,6 +17,10 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+:root {
+  --lighttheme: aqua;
+}
+
 .navigation {
   grid-column: 1/6;
   font-family: Arial, Helvetica, sans-serif;

@@ -6,7 +6,7 @@ import '../scss/main.scss';
 
 /* place your code below */
 
-console.log('HELLO 🚀')
+console.log('HELLO 123 🚀')
 
 const toggl = function() {
     const navbar = document.querySelector('.navigation__toggl--js');
